@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>q13</title>
+</head>
+<body>
+    <div class="temp">
+        This is sample text 1<br>
+        This is sample text 1<br>
+    </div>
+    <div class="temp">
+        This is sample text 2<br>
+        This is sample text 2<br>
+        This is sample text 2<br>
+    </div>
+    <div class="temp">
+        This is sample text 3<br>
+        This is sample text 3<br>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        $(document).click(function(){
+            var highest_element = null;
+            var hi = 0;
+            $(".temp").each(function(){
+                var h = $(this).height();
+                if(h > hi){
+                    hi = h;
+                    highest_element = $(this);  
+                }    
+            });
+            $(highest_element).css("background-color", "red");
+            alert("max height " + hi);
+        });
+    </script>
+</body>
+</html>

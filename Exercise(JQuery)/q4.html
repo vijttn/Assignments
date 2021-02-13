@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>q4</title>
+    <style>
+        .a{
+            background-color: yellow;
+        }
+
+        .b{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("button").click( function () {
+                $('input[type="button1"]').attr("disabled", "disabled").addClass("b");
+            });
+        });
+    </script>
+    <center>
+        <input type="button1" value="submit" name="submit" class="a">
+        <p></p>
+        <button>click this to disable submit</button>
+    </center>
+</body>
+</html>

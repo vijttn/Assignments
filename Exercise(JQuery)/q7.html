@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>q7</title>
+    
+    <p id="temp"></p>
+<button>click </button>
+<script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("button").click(function() {
+			$("#temp").append("this is sample text  after clicking the button.<br>")
+		});
+		$("#temp").click(function() {
+			$("#temp").append("this is sample text after clicking the text.<br>")
+		});
+	});
+</script>
+
+</head>
+</html>

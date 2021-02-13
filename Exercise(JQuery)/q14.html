@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>q14</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table id="Table" style="width: 90%;">
+        <tr>
+            <th class="name">First name</th>
+            <th class="country">Country</th>
+            <th class="exp">Experience</th>
+        </tr>
+        <tr>
+            <td class="name">Garry</th>
+            <td class="country">Rome</th>
+            <td class="exp">7</th>
+        </tr>
+        <tr>
+            <td class="name">Sonam</th>
+            <td class="country">Africa</th>
+            <td class="exp">15</th>
+        </tr>
+        <tr>
+            <td class="name">Bennedict</th>
+            <td class="country">England</th>
+            <td class="exp">8</th>
+        </tr>
+        <tr>
+            <td class="name">Arun</th>
+            <td class="country">India</th>
+            <td class="exp">20</th>
+        </tr>
+    </table>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".exp").each(function(i, n){
+                if($(n).text() > 10)
+                    $(n).css("color", "green").css("background-color", "lightblue");
+            });
+        });
+    </script>
+</body>
+</html>

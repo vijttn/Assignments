@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>q9</title>
+</head>
+<body>
+    <span>Choose your destination.</span>
+    <select>
+        <option value="">Select Destination</option>
+        <option value="Australia">Australia</option>
+        <option value="Russia">Russia</option>
+        <option value="Hawaii">Hawaii</option>
+    </select>
+    <p>Your ticket is for: <span><p id="temp"></p></span></p>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("select").on("change", function(){
+                $("#temp").append(this.value+" <br>")
+            });
+        });
+    </script>
+</body>
+</html>

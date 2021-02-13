@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>q6</title>
+    <style>
+         button{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>This is a sample text(part 1)</p>
+        <p>This is a sample text(part 2)</p>
+    This is a sample text(part 3)
+    </div>
+    <center>
+        <button id="temp1">click for div</button>
+        <button id="temp2">click for p</button>
+    </center>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#temp1").click(function(){
+                $("p").replaceWith($("<p>"+$("div").text()+"</p>"));
+            });
+            $("#temp2").click(function(){
+                $("div").replaceWith($("<div>"+$("p").text()+"</div>"));
+            });
+        });
+    </script>
+</body>
+</html>
